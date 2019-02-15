@@ -1,17 +1,26 @@
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
+//material contact form animation
+$('.contact-form').find('.form-control').each(function() {
+  var targetItem = $(this).parent();
+  if ($(this).val()) {
+    $(targetItem).find('label').css({
+      'top': '10px',
+      'fontSize': '14px'
+    });
   }
-}
+})
+$('.contact-form').find('.form-control').focus(function() {
+  $(this).parent('.input-block').addClass('focus');
+  $(this).parent().find('label').animate({
+    'top': '10px',
+    'fontSize': '14px'
+  }, 300);
+})
+$('.contact-form').find('.form-control').blur(function() {
+  if ($(this).val().length == 0) {
+    $(this).parent('.input-block').removeClass('focus');
+    $(this).parent().find('label').animate({
+      'top': '25px',
+      'fontSize': '18px'
+    }, 300);
+  }
+})

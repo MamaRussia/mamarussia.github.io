@@ -3,7 +3,6 @@ header {
     width: 100%;
     height: 100px;
     background-color: #ffffff;
-    border-bottom: 1px solid #cccccc;
 }
 
 .header {
@@ -19,7 +18,6 @@ header {
     width: 225px;
     color: #ffffff;
 	  height: 100%;
-    border-bottom: 2px solid #cccccc;
     text-align: center;
     
 }
@@ -64,9 +62,12 @@ h1 {
   /* css that changes content and images */
 	body {
 		background: url(../Images/grey-background.png);
+		margin-right: auto;
+    margin-left: auto;
 		}
 	
 	p {
+		margin: 25px 25px 25px 15px;
 	text-align: justify;
 	background-color: #ffffff;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -88,17 +89,11 @@ h1 {
 	margin-bottom: 25px;
   }
  
-  .container {
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	padding: 20px;
-  }
+
  
   .content {
-	margin-left: 150px;
-
-	
-	width:250px;
+		margin: auto;
+	width:960px;
 	background-color: #ffffff;
   }
 
@@ -106,13 +101,13 @@ h1 {
 	float: left;
 	width: 200px;
 	height: 200px;
-	padding: 0px 15px 2px 0px;
+	padding: 0px 15px 2px 15px;
 }
 
 .container1 {  
   background-color: white;
 	width: 960px;
-	margin-left: 160px
+	padding: 0px 0px 75px 0px;
 }
 
 
@@ -129,7 +124,8 @@ h1 {
 		text-align: center;
 		vertical-align: bottom;
     height: 50px;
-    border-top: 10px solid #4aaaa5;
+		border-top: 10px solid #4aaaa5;
+		padding-top: 10px;
   }
 
   .footer {
@@ -137,7 +133,7 @@ h1 {
 	width: 960px;
 	height: 50px;
 	margin-top:15px;
-    margin-right: 15%;
+  margin-right: 15%;
 	margin-left: 15%;
 	margin-left: 600px;
   }
@@ -169,7 +165,7 @@ input[type=text], select, textarea {
   }
   
 .form {
-	padding-bottom: 50px;
+	padding: 0px 125px 150px 20px;
 }
 
 label {
